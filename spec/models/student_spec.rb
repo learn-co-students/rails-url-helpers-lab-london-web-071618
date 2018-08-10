@@ -1,5 +1,6 @@
 require 'rails_helper'
 
+
 describe Student do
   before(:each) do
     @student = Student.create!(first_name: "Daenerys", last_name: "Targaryen")
@@ -11,6 +12,7 @@ describe Student do
 
   it 'has an active attribute that defaults to false' do
     expect(@student.active).to eq(false)
+
   end
 
   it 'has a to_s instance method' do
